@@ -102,7 +102,7 @@
         <jetty.version>9.4.54.v20240208</jetty.version>
         <jersey.version>1.19.4</jersey.version>
         <jackson.version>2.12.7.20240502</jackson.version>
-        <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
+        <codehaus.jackson.version>1.9.14.jdk17-redhat-00001</codehaus.jackson.version>
         <log4j.version>2.23.1</log4j.version>
         <mysql.version>5.1.49</mysql.version>
         <mariadb.version>2.7.3</mariadb.version>
@@ -268,6 +268,17 @@
             <url>https://packages.confluent.io/maven/</url>
             <snapshots>
                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+         <repository>
+            <id>redhat-ga</id>
+            <name>Red Hat GA Repository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
