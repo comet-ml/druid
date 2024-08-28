@@ -15,6 +15,7 @@
 
 name: "Unit & Integration tests CI"
 on:
+  workflow_dispatch:
   push:
     paths-ignore:
       - '**/*.md'
