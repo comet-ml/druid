@@ -100,13 +100,13 @@
         <hamcrest.version>1.3</hamcrest.version>
         <jetty.version>9.4.54.v20240208</jetty.version>
         <jersey.version>1.19.4</jersey.version>
-        <jackson.version>2.12.7.20221012</jackson.version>
+        <jackson.version>2.12.7.20240502</jackson.version>
         <codehaus.jackson.version>1.9.14.jdk17-redhat-00001</codehaus.jackson.version>
-        <log4j.version>2.22.1</log4j.version>
+        <log4j.version>2.23.1</log4j.version>
         <mysql.version>8.2.0</mysql.version>
         <mariadb.version>2.7.3</mariadb.version>
         <netty3.version>3.10.6.Final</netty3.version>
-        <netty4.version>4.1.108.Final</netty4.version>
+        <netty4.version>4.1.112.Final</netty4.version>
         <postgresql.version>42.7.2</postgresql.version>
         <protobuf.version>3.24.0</protobuf.version>
         <resilience4j.version>1.3.1</resilience4j.version>
@@ -205,7 +205,6 @@
         <!-- Community extensions -->
         <module>extensions-contrib/compressed-bigdecimal</module>
         <module>extensions-contrib/influx-extensions</module>
-        <module>extensions-contrib/cassandra-storage</module>
         <module>extensions-contrib/dropwizard-emitter</module>
         <module>extensions-contrib/cloudfiles-extensions</module>
         <module>extensions-contrib/graphite-emitter</module>
@@ -214,7 +213,6 @@
         <module>extensions-contrib/time-min-max</module>
         <module>extensions-contrib/virtual-columns</module>
         <module>extensions-contrib/thrift-extensions</module>
-        <module>extensions-contrib/ambari-metrics-emitter</module>
         <module>extensions-contrib/sqlserver-metadata-storage</module>
         <module>extensions-contrib/kafka-emitter</module>
         <module>extensions-contrib/redis-cache</module>
@@ -230,9 +228,7 @@
         <module>extensions-contrib/aliyun-oss-extensions</module>
         <module>extensions-contrib/prometheus-emitter</module>
         <module>extensions-contrib/opentelemetry-emitter</module>
-        <module>extensions-contrib/kubernetes-overlord-extensions</module>
         <module>extensions-contrib/druid-iceberg-extensions</module>
-        <module>extensions-contrib/druid-deltalake-extensions</module>
         <module>extensions-contrib/spectator-histogram</module>
         <module>extensions-contrib/rabbit-stream-indexing-service</module>
 
@@ -272,6 +268,17 @@
             </snapshots>
         </repository>
         <repository>
+            <id>redhat-ga</id>
+            <name>Red Hat GA Repository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+         <repository>
             <id>redhat-ga</id>
             <name>Red Hat GA Repository</name>
             <url>https://maven.repository.redhat.com/ga/</url>
