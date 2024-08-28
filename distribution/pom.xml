@@ -397,11 +397,7 @@
                                         <argument>${settings.localRepository}</argument>
                                         <argument>--no-default-hadoop</argument>
                                         <argument>-c</argument>
-                                        <argument>org.apache.druid.extensions.contrib:ambari-metrics-emitter</argument>
-                                        <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:dropwizard-emitter</argument>
-                                        <argument>-c</argument>
-                                        <argument>org.apache.druid.extensions.contrib:druid-cassandra-storage</argument>
                                         <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:druid-cloudfiles-extensions</argument>
                                         <argument>-c</argument>
@@ -414,8 +410,6 @@
                                         <argument>org.apache.druid.extensions.contrib:druid-influxdb-emitter</argument>
                                         <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:kafka-emitter</argument>
-                                        <argument>-c</argument>
-                                        <argument>org.apache.druid.extensions.contrib:druid-kubernetes-overlord-extensions</argument>
                                         <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:materialized-view-maintenance</argument>
                                         <argument>-c</argument>
@@ -452,8 +446,6 @@
                                         <argument>org.apache.druid.extensions.contrib:opentelemetry-emitter</argument>
                                         <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:druid-iceberg-extensions</argument>
-                                        <argument>-c</argument>
-                                        <argument>org.apache.druid.extensions.contrib:druid-deltalake-extensions</argument>
                                         <argument>-c</argument>
                                         <argument>org.apache.druid.extensions.contrib:druid-spectator-histogram</argument>
                                         <argument>-c</argument>
